@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Intro Script R H2 Base";
+  font-weight: 400;
+  font-style: normal;
+  src:
+    local("Intro Script R H2 Base"),
+    local("IntroScriptR-H2Base"),
+    url("../fonts/intro-script-r/intro-script-r-h2-base.woff2") format("woff2"),
+    url("../fonts/intro-script-r/intro-script-r-h2-base.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-style: normal;
+  src:
+    local("Playfair Display Bold"),
+    local("PlayfairDisplay-Bold"),
+    url("../fonts/playfair-display/playfair-display-700.woff2") format("woff2"),
+    url("../fonts/playfair-display/playfair-display-700.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-style: italic;
+  src:
+    local("Playfair Display Bold Italic"),
+    local("PlayfairDisplay-BoldItalic"),
+    url("../fonts/playfair-display/playfair-display-700-italic.woff2") format("woff2"),
+    url("../fonts/playfair-display/playfair-display-700-italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  src:
+    local("Roboto Regular"),
+    local("Roboto-Regular"),
+    url("../fonts/roboto/roboto-cyrillic-latin-400.woff2") format("woff2"),
+    url("../fonts/roboto/roboto-cyrillic-latin-400.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: italic;
+  src:
+    local("Roboto Regular"),
+    local("Roboto-Regular"),
+    url("../fonts/roboto/roboto-cyrillic-latin-400-italic.woff2") format("woff2"),
+    url("../fonts/roboto/roboto-cyrillic-latin-400-italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  src:
+    local("Roboto Regular"),
+    local("Roboto-Regular"),
+    url("../fonts/roboto/roboto-cyrillic-latin-500.woff2") format("woff2"),
+    url("../fonts/roboto/roboto-cyrillic-latin-500.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  src:
+    local("Roboto Bold"),
+    local("Roboto-Bold"),
+    url("../fonts/roboto/roboto-cyrillic-latin-700.woff2") format("woff2"),
+    url("../fonts/roboto/roboto-cyrillic-latin-700.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: italic;
+  src:
+    local("Roboto Bold Italic"),
+    local("Roboto-BoldItalic"),
+    url("../fonts/roboto/roboto-cyrillic-latin-700-italic.woff2") format("woff2"),
+    url("../fonts/roboto/roboto-cyrillic-latin-700-italic.woff") format("woff");
+}

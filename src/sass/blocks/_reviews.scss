@@ -1,0 +1,41 @@
+.reviews {
+  position: relative;
+
+}
+
+.reviews__inner {
+  position: relative;
+  z-index: 1;
+
+  margin: 0 auto;
+  // padding: 5px 0 12px;
+  overflow: hidden;
+
+  list-style: none;
+}
+
+.reviews__items {
+  @include ul-reset();
+
+  position: relative;
+  z-index: 1;
+
+  box-sizing: content-box;
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  transition-property: transform;
+}
+
+@media #{$tablet-width} {
+  .reviews__inner {
+    width: 394px;
+  }
+}
+
+@media #{$desktop-width} {
+  .reviews__inner {
+    width: 674px;
+  }
+}

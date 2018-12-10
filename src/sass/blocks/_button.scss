@@ -1,0 +1,23 @@
+.button {
+  display: inline-block;
+  padding: 19px 66px;
+
+  border: none;
+  border-radius: calc(1em + 15px);
+  background-color: #f50049;
+  transition: box-shadow 0.3s ease;
+
+  font-size: 13px;
+  line-height: 1em;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    box-shadow: 0 5px 8px 1px rgba(#ff0043, 0.3);
+  }
+}

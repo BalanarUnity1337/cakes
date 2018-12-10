@@ -1,0 +1,145 @@
+.quote {
+  position: relative;
+
+  margin-top: 26px;
+  padding-top: 45px;
+
+  &::before {
+    content: "\201D";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+
+    font-family: #{$additional-font};
+    font-size: 60px;
+    line-height: 1em;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+
+.quote__text {
+  margin: 0;
+
+  font-family: #{$additional-font};
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+}
+
+.quote__signature {
+  width: 64px;
+  margin: 17px auto 0;
+}
+
+.quote__signature img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+@media #{$tablet-width} {
+  .quote {
+    // position: relative;
+
+    width: 374px;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 21px;
+    padding-top: 60px;
+
+    &::before {
+      // content: "\201D";
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+
+      // display: block;
+      // width: 100%;
+
+      // font-family: #{$additional-font};
+      font-size: 77px;
+      // line-height: 1em;
+      // color: #ffffff;
+      // text-align: center;
+    }
+  }
+
+  .quote__text {
+    // margin: 0;
+
+    font-size: 14px;
+    line-height: 18px;
+    // font-weight: 700;
+    // font-style: italic;
+    // text-align: center;
+  }
+
+  .quote__signature {
+    // width: 64px;
+    // margin: 17px auto 0;
+    width: 82px;
+    margin-top: 25px;
+  }
+
+  .quote__signature img {
+  //  display: block;
+  }
+}
+
+@media #{$desktop-width} {
+  .quote {
+    // position: relative;
+
+    width: 674px;
+    // margin-left: auto;
+    // margin-right: auto;
+
+    margin-top: 117px;
+    // padding-top: 60px;
+
+    &::before {
+      // content: "\201D";
+      // position: absolute;
+      top: -33px;
+      // left: 0;
+
+      // display: block;
+      // width: 100%;
+
+      // font-family: #{$additional-font};
+      font-size: 140px;
+      // line-height: 1em;
+      // color: #ffffff;
+      // text-align: center;
+    }
+  }
+
+  .quote__text {
+    // margin: 0;
+
+    font-size: 25px;
+    line-height: 37px;
+    // font-weight: 700;
+    // font-style: italic;
+    // text-align: center;
+  }
+
+  .quote__signature {
+    // width: 64px;
+    // margin: 17px auto 0;
+    width: 149px;
+    margin-top: 46px;
+  }
+
+  .quote__signature img {
+  //  display: block;
+  }
+}

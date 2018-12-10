@@ -1,0 +1,138 @@
+.how-to-order {
+  @include ul-reset();
+
+  margin-top: 28px;
+
+  counter-reset: how-to-order;
+}
+
+.how-to-order__item {
+  position: relative;
+
+  padding-left: 31px;
+  margin-bottom: 14px;
+
+  &::before {
+    counter-increment: how-to-order;
+    content: counter(how-to-order);
+    position: absolute;
+    top: -8px;
+    left: 0;
+
+    font-family: #{$additional-font};
+    font-size: 35px;
+    line-height: 1em;
+    font-weight: 700;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.how-to-order__title {
+  font-size: 15px;
+  line-height: 1em;
+  font-weight: 700;
+}
+
+.how-to-order__description {
+  margin: 4px 0 0;
+
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@media #{$tablet-width} {
+  .how-to-order {
+    width: 375px;
+    margin-left: auto;
+    margin-top: 25px;
+
+    // counter-reset: how-to-order;
+  }
+
+  .how-to-order__item {
+    // position: relative;
+
+    padding-left: 39px;
+    margin-bottom: 25px;
+
+    &::before {
+      // counter-increment: how-to-order;
+      // content: counter(how-to-order);
+      // position: absolute;
+      // top: -8px;
+      // left: 0;
+
+      // font-family: #{$additional-font};
+      // font-size: 35px;
+      // line-height: 1em;
+      // font-weight: 700;
+    }
+
+    &:last-of-type {
+      // margin-bottom: 0;
+    }
+  }
+
+  .how-to-order__title {
+    // font-size: 15px;
+    // line-height: 1em;
+    // font-weight: 700;
+  }
+
+  .how-to-order__description {
+    // margin: 4px 0 0;
+
+    // font-size: 14px;
+    // line-height: 18px;
+  }
+}
+
+@media #{$desktop-width} {
+  .how-to-order {
+    width: 485px;
+    // margin-left: auto;
+    margin-top: 29px;
+
+    // counter-reset: how-to-order;
+  }
+
+  .how-to-order__item {
+    // position: relative;
+
+    padding-left: 48px;
+    // margin-bottom: 25px;
+
+    &::before {
+      // counter-increment: how-to-order;
+      // content: counter(how-to-order);
+      // position: absolute;
+      top: -20px;
+      // left: 0;
+
+      // font-family: #{$additional-font};
+      font-size: 64px;
+      // line-height: 1em;
+      // font-weight: 700;
+    }
+
+    &:last-of-type {
+      // margin-bottom: 0;
+    }
+  }
+
+  .how-to-order__title {
+    font-size: 21px;
+    // line-height: 1em;
+    // font-weight: 700;
+  }
+
+  .how-to-order__description {
+    // margin: 4px 0 0;
+
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

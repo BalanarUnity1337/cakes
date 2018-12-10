@@ -1,0 +1,24 @@
+@mixin container() {
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media #{$tablet-width} {
+    max-width: 728px;
+  }
+
+  @media #{$desktop-width} {
+    max-width: 1220px;
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+}
+
+@mixin ul-reset() {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

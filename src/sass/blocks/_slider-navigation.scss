@@ -1,0 +1,115 @@
+.slider-navigation {
+  display: none;
+
+  padding: 0;
+
+  border: none;
+}
+
+@media #{$tablet-width} {
+  .slider-navigation {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px 0 rgba(#000000, 0.15);
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 1px 2px 0 rgba(#000000, 0.3);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 14px;
+
+      width: 10px;
+      height: 10px;
+
+      border-left: 2px solid #f77f94;
+      border-bottom: 2px solid #f77f94;
+    }
+
+    &--prev {
+
+      &::before {
+        left: 16px;
+        transform: rotateZ(45deg);
+      }
+    }
+
+    &--next {
+
+      &::before {
+        right: 16px;
+        transform: rotateZ(225deg);
+      }
+    }
+
+    &--disabled {
+      opacity: 0.5;
+
+      pointer-events: none;
+    }
+  }
+
+  .slider-navigation--fillings.slider-navigation--prev {
+    left: -82px;
+  }
+
+  .slider-navigation--fillings.slider-navigation--next {
+    right: -60px;
+  }
+
+  .slider-navigation--decorations.slider-navigation--prev {
+    left: -60px;
+  }
+
+  .slider-navigation--decorations.slider-navigation--next {
+    right: -60px;
+  }
+
+  .slider-navigation--reviews.slider-navigation--prev {
+    left: 60px;
+  }
+
+  .slider-navigation--reviews.slider-navigation--next {
+    right: 60px;
+  }
+}
+
+@media #{$desktop-width} {
+  .slider-navigation--fillings.slider-navigation--prev {
+    left: -130px;
+  }
+
+  .slider-navigation--fillings.slider-navigation--next {
+    right: -100px;
+  }
+
+  .slider-navigation--decorations.slider-navigation--prev {
+    left: -100px;
+  }
+
+  .slider-navigation--decorations.slider-navigation--next {
+    right: -100px;
+  }
+
+  .slider-navigation--reviews.slider-navigation--prev {
+    left: 120px;
+  }
+
+  .slider-navigation--reviews.slider-navigation--next {
+    right: 120px;
+  }
+}
+

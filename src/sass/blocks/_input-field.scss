@@ -1,0 +1,22 @@
+.input-field {
+
+  box-sizing: border-box;
+
+  font-size: 14px;
+  color: $page-font-color;
+
+  &::placeholder {
+    opacity: 0.2;
+
+    color: #000000;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &--textarea {
+    display: block;
+    resize: none;
+  }
+}
